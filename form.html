@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a{
+            text-decoration: none;
+        }
+        .form-container{
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid palevioletred; */
+            align-items: center;
+            height: 90vh;
+        }
+        .login-form{
+            /* display: flex; now it makes bigger size */
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            /* border: 2px dotted slateblue; */
+            /* justify-content: center; this not working bcz there is no space to the login-form checked by border; */
+            /* border: 2px solid rebeccapurple; need to push a div or section element to be done */
+        }
+        .login-form input{
+            margin-top: 22px;
+        }
+    </style>
 </head>
 <body>
     <nav>
-        
+        <!-- <a href="">home</a>
+        <a href="">Profile</a>
+        <a href="">Blog</a>
+        <a href="">About</a> -->
+        <div>
+            <a href="">home</a>
+            <a href="">Profile</a>
+            <a href="">Blog</a>
+            <a href="">About</a>
+        </div>
+        <a href="">Login</a>
     </nav>
+<section class="form-container">
+    <form class="login-form">
+        <h2>Please fill up the form</h2>
+        <input type="email" name="" id="" placeholder="youremail@gmail.com" required>
+        <input type="password" name="" id="" placeholder="type your password" required>
+        <input type="submit" value="login">
+    </form>
+</section>
 </body>
 </html>
